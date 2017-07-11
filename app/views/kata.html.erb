@@ -31,3 +31,20 @@ class Solution {
         return num + 5;
     }
 }
+
+https://www.codewars.com/kata/smallest-unused-id/train/ruby
+
+def next_id(arr)
+  smallest_id = -1
+  sorted_array = arr.sort
+  (0..sorted_array.length-1).each do |i|
+    p i
+    diff = sorted_array[i] - smallest_id
+    if diff > 1
+      break
+    else
+      smallest_id = sorted_array[i]
+    end
+  end
+  smallest_id+1
+end
