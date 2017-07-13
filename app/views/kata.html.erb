@@ -48,3 +48,13 @@ def next_id(arr)
   end
   smallest_id+1
 end
+
+https://www.codewars.com/kata/yield-to-the-block/train/ruby
+
+def compute(&block)
+  if block
+    yield
+  else
+    "Do not compute"
+  end
+end
