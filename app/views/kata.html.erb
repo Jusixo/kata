@@ -6,11 +6,15 @@ def correct_tail(body, tail)
   last_letter == tail
 end
 
+
+
 https://www.codewars.com/kata/do-i-get-a-bonus/train/ruby
 
 def bonus_time(salary, bonus)
   "$#{bonus ? salary * 10 : salary}"
 end
+
+
 
 https://www.codewars.com/kata/grasshopper-basic-function-fixer/train/ruby
 (Ruby)
@@ -32,6 +36,8 @@ class Solution {
     }
 }
 
+
+
 https://www.codewars.com/kata/smallest-unused-id/train/ruby
 
 def next_id(arr)
@@ -49,6 +55,8 @@ def next_id(arr)
   smallest_id+1
 end
 
+
+
 https://www.codewars.com/kata/yield-to-the-block/train/ruby
 
 def compute(&block)
@@ -59,8 +67,18 @@ def compute(&block)
   end
 end
 
+
+
 https://www.codewars.com/kata/duck-duck-goose/train/ruby
 
 def duck_duck_goose(players, goose)
   players.cycle.take(goose).last.name
+end
+
+
+
+https://www.codewars.com/kata/srot-the-inner-ctonnet-in-dsnnieedcg-oredr/train/ruby
+
+def sort_the_inner_content(words)
+  words.split.each { |x| x[1..-2] = x[1..-2].chars.sort.reverse.join }.join(' ')
 end
