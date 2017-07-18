@@ -82,3 +82,15 @@ https://www.codewars.com/kata/srot-the-inner-ctonnet-in-dsnnieedcg-oredr/train/r
 def sort_the_inner_content(words)
   words.split.each { |x| x[1..-2] = x[1..-2].chars.sort.reverse.join }.join(' ')
 end
+
+https://www.codewars.com/kata/esolang-interpreters-number-1-introduction-to-esolangs-and-my-first-interpreter-ministringfuck/train/ruby
+
+def my_first_interpreter(code)
+  counter = 0
+  result = ""
+  code.chars.each do |char|
+    counter += 1 if char == "+"
+    result << (counter % 256).chr if char == "."
+  end
+  result
+end
