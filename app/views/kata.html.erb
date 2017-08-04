@@ -100,3 +100,9 @@ https://www.codewars.com/kata/triple-trouble-2/train/ruby
 def triple_trouble(one, two, three)
   one.chars.zip(two.chars, three.chars).join("")
 end
+
+https://www.codewars.com/kata/center-of-the-matrix/train/ruby
+
+def center (mat)
+  mat[mat.size / 2][mat[0].size / 2] if mat && mat.size.odd? && mat[0].size.odd?
+end
