@@ -114,7 +114,14 @@ def _if(bool, ifTrue, ifFalse)
 end
 
 https://www.codewars.com/kata/repeatit/train
+(ruby)
 
 def repeat_it(string,n)
   string.is_a?(String) ? string*n : "Not a string"
 end
+
+(JS)
+
+var repeatIt = function(str, n) {
+  return typeof str === 'string' ? Array(n+1).join(str) : 'Not a string';
+}
