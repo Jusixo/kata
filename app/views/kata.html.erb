@@ -153,3 +153,13 @@ function always (n) {
 def always(n=nil)
   lambda { n }
 end
+
+##First attempt at a level 6 kyu
+## It took me all afternoon and a ton of googling and looking back on notes
+https://www.codewars.com/kata/format-a-string-of-names-like-bart-lisa-and-maggie/train/ruby
+
+def list(names)
+  return '' if names.nil? || names.empty?
+  names = names.map { |name| name[:name] }
+  names.one? ? names.first : "#{names[0...-1].join(', ')} & #{names.last}"
+end
