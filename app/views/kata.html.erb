@@ -173,3 +173,10 @@ win = {
   win[p1] == p2 ? 'Player one won!' : 'Player two won!'
   end
 end
+
+https://www.codewars.com/kata/common-denominators/train/ruby
+
+def convertFracts(lst)
+  lcm = lst.reduce(1) { |x,y| x.lcm(y[1]) }
+  lst.map { |x| [lcm/x[1]*x[0], lcm] }
+end
