@@ -163,3 +163,13 @@ def list(names)
   names = names.map { |name| name[:name] }
   names.one? ? names.first : "#{names[0...-1].join(', ')} & #{names.last}"
 end
+
+https://www.codewars.com/kata/rock-paper-scissors/train/ruby
+
+win = {
+  'rock' => 'scissors', 'scissors' => 'paper', 'paper' => 'rock'
+}
+  return 'Draw!' if p1 == p2
+  win[p1] == p2 ? 'Player one won!' : 'Player two won!'
+  end
+end
