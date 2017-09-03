@@ -154,7 +154,7 @@ def always(n=nil)
   lambda { n }
 end
 
-##First attempt at a level 6 kyu
+## First attempt at a level 6 kyu
 ## It took me all afternoon and a ton of googling and looking back on notes
 https://www.codewars.com/kata/format-a-string-of-names-like-bart-lisa-and-maggie/train/ruby
 
@@ -179,4 +179,10 @@ https://www.codewars.com/kata/common-denominators/train/ruby
 def convertFracts(lst)
   lcm = lst.reduce(1) { |x,y| x.lcm(y[1]) }
   lst.map { |x| [lcm/x[1]*x[0], lcm] }
+end
+
+https://www.codewars.com/kata/parse-nice-int-from-char-problem/train/ruby
+##probably the fastest i've ever solved a kata
+def get_age(age)
+  age.to_i
 end
