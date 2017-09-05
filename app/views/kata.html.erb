@@ -186,3 +186,15 @@ https://www.codewars.com/kata/parse-nice-int-from-char-problem/train/ruby
 def get_age(age)
   age.to_i
 end
+
+https://www.codewars.com/kata/find-sum-of-top-left-to-bottom-right-diagonals/train/ruby
+
+def diagonalSum(matrix)
+  count = 0
+  result = 0
+  while count < matrix.length
+    result += matrix[count][count]
+    count += 1
+  end
+  result
+end
