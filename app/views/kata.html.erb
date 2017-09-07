@@ -198,3 +198,11 @@ def diagonalSum(matrix)
   end
   result
 end
+
+
+https://www.codewars.com/kata/80-s-kids-number-1-how-many-licks-does-it-take/train/ruby
+
+def total_licks(env)
+  env.any? && env.values.max > 0 ? str = " The toughest challenge was #{env.key(env.values.max)}." : str = ''
+  "It took #{252 + env.values.inject(0, :+)} licks to get to the tootsie roll center of a tootsie pop." + str
+end
