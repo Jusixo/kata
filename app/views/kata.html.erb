@@ -206,3 +206,20 @@ def total_licks(env)
   env.any? && env.values.max > 0 ? str = " The toughest challenge was #{env.key(env.values.max)}." : str = ''
   "It took #{252 + env.values.inject(0, :+)} licks to get to the tootsie roll center of a tootsie pop." + str
 end
+
+https://www.codewars.com/kata/80-s-kids-number-5-you-cant-do-that-on-television/train/ruby
+
+def bucket_of(said)
+  water = /water|wet|wash/i === said
+  slime = /slime|i don't know/i === said
+
+  if water && slime
+    "sludge"
+  elsif slime
+    "slime"
+  elsif water
+    "water"
+  else
+    "air"
+  end
+end
