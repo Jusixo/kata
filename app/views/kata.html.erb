@@ -241,3 +241,12 @@ https://www.codewars.com/kata/noobcode-01-supersize-me-dot-dot-dot-or-rather-thi
 def super_size(n)
   n.to_s.chars.sort.reverse.join.to_i
 end
+
+https://www.codewars.com/kata/i-love-you-a-little-a-lot-passionately-dot-dot-dot-not-at-all
+
+def how_much_i_love_you(nb_petals)
+phrase = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"]
+list = (nb_petals - 1) % 6
+
+phrase[list]
+end
