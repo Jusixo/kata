@@ -257,3 +257,13 @@ https://www.codewars.com/kata/sentence-smash/train/ruby
 def smash(words)
   words.join' '
 end
+
+
+https://www.codewars.com/kata/heads-and-legs/train/ruby
+
+def animals(heads, legs)
+  cow = (legs - 2 * heads)/2.0
+  chicken = heads - cow
+
+  chicken < 0 || cow < 0 ? "No solutions" : cow.to_i == cow ? [chicken, cow] : "No solutions"
+end
