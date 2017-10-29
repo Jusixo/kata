@@ -1,4 +1,5 @@
 https://www.codewars.com/kata/is-this-my-tail/train/ruby
+Solution:
 
 def correct_tail(body, tail)
   last_letter = body.chars.last
@@ -6,17 +7,16 @@ def correct_tail(body, tail)
   last_letter == tail
 end
 
-
-
 https://www.codewars.com/kata/do-i-get-a-bonus/train/ruby
+Solution:
 
 def bonus_time(salary, bonus)
   "$#{bonus ? salary * 10 : salary}"
 end
 
-
-
 https://www.codewars.com/kata/grasshopper-basic-function-fixer/train/ruby
+Solutions:
+
 (Ruby)
 def addFive(num)
   res = num + 5
@@ -36,9 +36,8 @@ class Solution {
     }
 }
 
-
-
 https://www.codewars.com/kata/smallest-unused-id/train/ruby
+Solution:
 
 def next_id(arr)
   smallest_id = -1
@@ -55,9 +54,8 @@ def next_id(arr)
   smallest_id+1
 end
 
-
-
 https://www.codewars.com/kata/yield-to-the-block/train/ruby
+Solution:
 
 def compute(&block)
   if block
@@ -67,23 +65,22 @@ def compute(&block)
   end
 end
 
-
-
 https://www.codewars.com/kata/duck-duck-goose/train/ruby
+Solution:
 
 def duck_duck_goose(players, goose)
   players.cycle.take(goose).last.name
 end
 
-
-
 https://www.codewars.com/kata/srot-the-inner-ctonnet-in-dsnnieedcg-oredr/train/ruby
+Solution:
 
 def sort_the_inner_content(words)
   words.split.each { |x| x[1..-2] = x[1..-2].chars.sort.reverse.join }.join(' ')
 end
 
 https://www.codewars.com/kata/esolang-interpreters-number-1-introduction-to-esolangs-and-my-first-interpreter-ministringfuck/train/ruby
+Solution:
 
 def my_first_interpreter(code)
   counter = 0
@@ -96,24 +93,29 @@ def my_first_interpreter(code)
 end
 
 https://www.codewars.com/kata/triple-trouble-2/train/ruby
+Solution:
 
 def triple_trouble(one, two, three)
   one.chars.zip(two.chars, three.chars).join("")
 end
 
 https://www.codewars.com/kata/center-of-the-matrix/train/ruby
+Solution:
 
 def center (mat)
   mat[mat.size / 2][mat[0].size / 2] if mat && mat.size.odd? && mat[0].size.odd?
 end
 
 https://www.codewars.com/kata/the-if-function/train/ruby
+Solution:
 
 def _if(bool, ifTrue, ifFalse)
   bool ? ifTrue.call : ifFalse.call
 end
 
 https://www.codewars.com/kata/repeatit/train
+Solutions:
+
 (ruby)
 
 def repeat_it(string,n)
@@ -127,6 +129,7 @@ var repeatIt = function(str, n) {
 }
 
 https://www.codewars.com/kata/is-it-even/train/ruby
+Solution:
 
 def test_even(n)
   if n % 2 == 0
@@ -137,12 +140,14 @@ def test_even(n)
 end
 
 https://www.codewars.com/kata/559ac78160f0be07c200005a
+Solution:
 
 def
   name_shuffler(str) str.split(" ").reverse.join(" ")
 end
 
 https://www.codewars.com/kata/a-function-within-a-function/train/ruby
+Solutions:
 
 (JS)
 function always (n) {
@@ -157,6 +162,7 @@ end
 ## First attempt at a level 6 kyu
 ## It took me all afternoon and a ton of googling and looking back on notes
 https://www.codewars.com/kata/format-a-string-of-names-like-bart-lisa-and-maggie/train/ruby
+Solution:
 
 def list(names)
   return '' if names.nil? || names.empty?
@@ -165,6 +171,7 @@ def list(names)
 end
 
 https://www.codewars.com/kata/rock-paper-scissors/train/ruby
+Solution:
 
 win = {
   'rock' => 'scissors', 'scissors' => 'paper', 'paper' => 'rock'
@@ -175,6 +182,7 @@ win = {
 end
 
 https://www.codewars.com/kata/common-denominators/train/ruby
+Solution:
 
 def convertFracts(lst)
   lcm = lst.reduce(1) { |x,y| x.lcm(y[1]) }
@@ -182,12 +190,15 @@ def convertFracts(lst)
 end
 
 https://www.codewars.com/kata/parse-nice-int-from-char-problem/train/ruby
+Solution:
+
 ##probably the fastest i've ever solved a kata
 def get_age(age)
   age.to_i
 end
 
 https://www.codewars.com/kata/find-sum-of-top-left-to-bottom-right-diagonals/train/ruby
+Solution:
 
 def diagonalSum(matrix)
   count = 0
@@ -201,6 +212,7 @@ end
 
 
 https://www.codewars.com/kata/80-s-kids-number-1-how-many-licks-does-it-take/train/ruby
+Solution:
 
 def total_licks(env)
   env.any? && env.values.max > 0 ? str = " The toughest challenge was #{env.key(env.values.max)}." : str = ''
@@ -208,6 +220,7 @@ def total_licks(env)
 end
 
 https://www.codewars.com/kata/80-s-kids-number-5-you-cant-do-that-on-television/train/ruby
+Solution:
 
 def bucket_of(said)
   water = /water|wet|wash/i === said
@@ -225,24 +238,28 @@ def bucket_of(said)
 end
 
 https://www.codewars.com/kata/opposite-number/train/ruby
+Solution:
 
 def opposite num
  -num
 end
 
 https://www.codewars.com/kata/function-3-multiplying-two-numbers/train/ruby
+Solution:
 
 def multiply(x, y)
   x * y
 end
 
 https://www.codewars.com/kata/noobcode-01-supersize-me-dot-dot-dot-or-rather-this-integer/train/ruby
+Solution:
 
 def super_size(n)
   n.to_s.chars.sort.reverse.join.to_i
 end
 
 https://www.codewars.com/kata/i-love-you-a-little-a-lot-passionately-dot-dot-dot-not-at-all
+Solution:
 
 def how_much_i_love_you(nb_petals)
 phrase = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"]
@@ -253,6 +270,7 @@ end
 
 
 https://www.codewars.com/kata/sentence-smash/train/ruby
+Solution:
 
 def smash(words)
   words.join' '
@@ -260,6 +278,7 @@ end
 
 
 https://www.codewars.com/kata/heads-and-legs/train/ruby
+Solution:
 
 def animals(heads, legs)
   cow = (legs - 2 * heads)/2.0
