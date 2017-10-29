@@ -267,3 +267,10 @@ def animals(heads, legs)
 
   chicken < 0 || cow < 0 ? "No solutions" : cow.to_i == cow ? [chicken, cow] : "No solutions"
 end
+
+https://www.codewars.com/kata/remove-string-spaces/train/ruby
+Solution:
+
+def no_space(x)
+  x.gsub(/[[:space:]]/, '')
+end
