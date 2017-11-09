@@ -293,3 +293,18 @@ Solution:
 def no_space(x)
   x.gsub(/[[:space:]]/, '')
 end
+
+
+https://www.codewars.com/kata/fizz-buzz/train/ruby
+Solution:
+
+def fizzbuzz(n)
+  return_val = []
+  1.upto(n) do |a|
+     val = ""
+     val += "Fizz" if a % 3 == 0
+     val += "Buzz" if a % 5 == 0
+     val == "" ? return_val << a : return_val << val
+  end
+  return_val
+end
