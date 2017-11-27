@@ -385,3 +385,10 @@ def mix(s1, s2)
   end
   selection.sort_by { |x| [-x.size, x[0], x[-1]] }.join("/")
 end
+
+https://www.codewars.com/kata/sum-of-a-nested-list/train/ruby
+solutions:
+
+def sum_nested(lst)
+  lst.flatten.inject(:+).to_i
+end
