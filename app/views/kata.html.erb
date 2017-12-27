@@ -311,94 +311,94 @@ end
 
 
 https://www.codewars.com/kata/ninety-nine-thousand-nine-hundred-ninety-nine/solutions?show-solutions=1
-Solution:
+  Solution:
 
-def in_words(int)
-  numbers_to_name = {
-      1000000 => "million",
-      1000 => "thousand",
-      100 => "hundred",
-      90 => "ninety",
-      80 => "eighty",
-      70 => "seventy",
-      60 => "sixty",
-      50 => "fifty",
-      40 => "forty",
-      30 => "thirty",
-      20 => "twenty",
-      19=>"nineteen",
-      18=>"eighteen",
-      17=>"seventeen",
-      16=>"sixteen",
-      15=>"fifteen",
-      14=>"fourteen",
-      13=>"thirteen",
-      12=>"twelve",
-      11 => "eleven",
-      10 => "ten",
-      9 => "nine",
-      8 => "eight",
-      7 => "seven",
-      6 => "six",
-      5 => "five",
-      4 => "four",
-      3 => "three",
-      2 => "two",
-      1 => "one"
-  }
-  str = ""
-  numbers_to_name.each do |num, name|
-    if int == 0
-      return str
-    elsif int.to_s.length == 1 && int/num > 0
-      return str + "#{name}"
-    elsif int < 100 && int/num > 0
-      return str + "#{name}" if int%num == 0
-      return str + "#{name} " + in_words(int%num)
-    elsif int/num > 0
-      return str + in_words(int/num) + " #{name} " + in_words(int%num)
+  def in_words(int)
+    numbers_to_name = {
+        1000000 => "million",
+        1000 => "thousand",
+        100 => "hundred",
+        90 => "ninety",
+        80 => "eighty",
+        70 => "seventy",
+        60 => "sixty",
+        50 => "fifty",
+        40 => "forty",
+        30 => "thirty",
+        20 => "twenty",
+        19=>"nineteen",
+        18=>"eighteen",
+        17=>"seventeen",
+        16=>"sixteen",
+        15=>"fifteen",
+        14=>"fourteen",
+        13=>"thirteen",
+        12=>"twelve",
+        11 => "eleven",
+        10 => "ten",
+        9 => "nine",
+        8 => "eight",
+        7 => "seven",
+        6 => "six",
+        5 => "five",
+        4 => "four",
+        3 => "three",
+        2 => "two",
+        1 => "one"
+    }
+    str = ""
+    numbers_to_name.each do |num, name|
+      if int == 0
+        return str
+      elsif int.to_s.length == 1 && int/num > 0
+        return str + "#{name}"
+      elsif int < 100 && int/num > 0
+        return str + "#{name}" if int%num == 0
+        return str + "#{name} " + in_words(int%num)
+      elsif int/num > 0
+        return str + in_words(int/num) + " #{name} " + in_words(int%num)
+      end
     end
   end
-end
 
-def number_to_english(num)
-return '' unless num.is_a? Integer
-return 'zero' if num==0
-return (in_words(num)).strip if num <= 99999 && num > 0
-return ''
-end
+  def number_to_english(num)
+    return '' unless num.is_a? Integer
+    return 'zero' if num==0
+    return (in_words(num)).strip if num <= 99999 && num > 0
+    return ''
+  end
 
 
 https://www.codewars.com/kata/5629db57620258aa9d000014/solutions/ruby
-solutions:
+  solutions:
 
-def mix(s1, s2)
-  selection = ('a'..'z').to_a.select { |letter| s1.count(letter) > 1 || s2.count(letter) > 1 }
-  selection.map! do |selection|
-    if s1.count(selection) > s2.count(selection)
-      "1:#{selection * s1.count(selection)}"
-    elsif s1.count(selection) < s2.count(selection)
-      "2:#{selection * s2.count(selection)}"
-    else
-      "=:#{selection * s1.count(selection)}"
+    def mix(s1, s2)
+      selection = ('a'..'z').to_a.select { |letter| s1.count(letter) > 1 || s2.count(letter) > 1 }
+      selection.map! do |selection|
+        if s1.count(selection) > s2.count(selection)
+          "1:#{selection * s1.count(selection)}"
+        elsif s1.count(selection) < s2.count(selection)
+          "2:#{selection * s2.count(selection)}"
+        else
+          "=:#{selection * s1.count(selection)}"
+        end
+      end
+      selection.sort_by { |x| [-x.size, x[0], x[-1]] }.join("/")
     end
-  end
-  selection.sort_by { |x| [-x.size, x[0], x[-1]] }.join("/")
-end
 
 https://www.codewars.com/kata/sum-of-a-nested-list/train/ruby
-solutions:
+  solutions:
 
-def sum_nested(lst)
-  lst.flatten.inject(:+).to_i
-end
+      def sum_nested(lst)
+        lst.flatten.inject(:+).to_i
+      end
 
-(recent move has caused me to slack a bit on my git updating
-so am going to attempt to do a couple of katas a day for the next few days)
+      (recent move has caused me to slack a bit on my git updating
+      so am going to attempt to do a couple of katas a day for the next few days)
 
 https://www.codewars.com/kata/57a0556c7cb1f31ab3000ad7/solutions/ruby
-solutions:
+  solutions:
 
-def make_upper_case(str)
-  str.upcase
-end
+    def make_upper_case(str)
+      str.upcase
+    end
