@@ -402,3 +402,21 @@ https://www.codewars.com/kata/57a0556c7cb1f31ab3000ad7/solutions/ruby
     def make_upper_case(str)
       str.upcase
     end
+
+https://www.codewars.com/kata/swap-the-head-and-the-tail
+
+  Solutions:
+  
+    def swap_head_tail arr
+        swapped_array = []
+        if arr.length.odd?
+          swapped_array << arr[(arr.length/2 + 1)..-1]
+          swapped_array << arr[arr.length/2]
+          swapped_array << arr[0...arr.length/2]
+         else
+          swapped_array << arr[arr.length/2..-1]
+          swapped_array << arr[0...arr.length/2]
+         end
+
+        swapped_array.flatten
+    end
