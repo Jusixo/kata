@@ -430,7 +430,7 @@ https://www.codewars.com/kata/man-in-the-west/train/ruby
   (recent move has caused me to slack a bit on my git updating
   so am going to attempt to do a couple of katas a day for the next few days)
 
-  https://www.codewars.com/kata/55685cd7ad70877c23000102/ruby
+https://www.codewars.com/kata/55685cd7ad70877c23000102/train/ruby
 
   Solution:
 
@@ -438,12 +438,20 @@ https://www.codewars.com/kata/man-in-the-west/train/ruby
         -num.abs
     end
 
-  https://www.codewars.com/kata/count-vowels-in-a-string/train/ruby
+https://www.codewars.com/kata/count-vowels-in-a-string/train/ruby
 
-  very undefined cases that i needed to solve, refused to do a multiliner for it. 
+  very undefined cases that i needed to solve, refused to do a multiliner for it.
 
   Solution:
 
     def count_vowels(str='')
       str.scan(/[aeiouAEIOU]/).size rescue nil
+    end
+
+https://www.codewars.com/kata/52b305bec65ea40fe90007a7/train/ruby
+  *level 6*
+  Solution:
+
+    def grabscrab anagram, dictionary
+      dictionary.select { |word| anagram.split('').sort == word.split('').sort }
     end
